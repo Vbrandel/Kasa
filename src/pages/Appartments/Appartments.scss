@@ -1,13 +1,8 @@
-$color_1: #FF6060;
-$color_2: white;
-$font-family_1: 'Montserrat';
-$background-color_1: #FF6060;
-
 .appartement-info {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	color: $color_1;
+	color: #ff6060;
 }
 .appartement-container {
 	padding: 0px 5% 0px 5%;
@@ -23,12 +18,9 @@ $background-color_1: #FF6060;
 	align-items: center;
 	justify-content: flex-end;
 }
-
-.appartement-host span{
-	width: 25%;
+.appartement-host div {
 	text-align: right;
 }
-
 .tag-container {
 	display: flex;
 	flex-flow: row wrap;
@@ -40,13 +32,10 @@ $background-color_1: #FF6060;
 	gap: 5%;
 	margin-top: 30px;
 }
-.appartement-left {
-	h2 {
-		font-family: $font-family_1;
-		font-weight: 500;
-	}
+.appartement-left h2 {
+	font-family: 'Montserrat';
+	font-weight: 500;
 }
-
 .appartement-right {
 	display: flex;
 	flex-direction: row-reverse;
@@ -55,52 +44,55 @@ $background-color_1: #FF6060;
 	width: 100%;
 	padding-top: 20px;
 }
-
-.star img{
-	width: 30px
+.star img {
+	width: 30px;
 }
-
+.appartement-block {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
 @media screen and (min-width: 768px) {
 	.appartement-header {
 		grid-template-columns: 1fr 1fr;
-	}
+   }
 	.appartement-container {
 		padding: 0px 10% 0px 10%;
-	}
+   }
 	.appartement-tag {
 		padding-inline: 40px;
-	}
+   }
 	.appartement-left {
-		h2 {
-			font-size: 36px;
-			width: 80%;
-		}
 		width: 80%;
-	}
+   }
+	.appartement-left h2 {
+		font-size: 36px;
+		width: 80%;
+   }
 	.appartement-bascule {
 		flex-direction: row;
-	}
-	.appartement-right{
+   }
+	.appartement-right {
 		flex-direction: column;
 		justify-content: space-around;
-	}
-	.appartement-block{
-		width: 100%;
-		display: flex;
-	}
-	.appartement-host span{
-		width: 10%;
+		width: 30%;
+   }
+	.appartement-block {
+		flex-wrap: nowrap;
+   }
+	.appartement-host div {
 		text-align: right;
 		font-size: 25px;
-	}
-	.appartement-host{
+   }
+	.appartement-host {
 		width: 100%;
-	}
-	.star img{
-		width: 40px
-	}
-	.star{
+   }
+	.star img {
+		width: 40px;
+   }
+	.star {
 		width: 100%;
-		text-align: right;
-	}
+		display: flex;
+		justify-content: end;
+   }
 }

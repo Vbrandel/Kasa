@@ -1,4 +1,4 @@
-$color_1: #FF6060;
+$color_1: #ff6060;
 $font-family_1: 'Montserrat';
 
 .errorComponent {
@@ -10,36 +10,36 @@ $font-family_1: 'Montserrat';
 	padding: 5%;
 	font-family: $font-family_1;
 	p {
+		font-weight: 500;
+		font-size: 18px;
 		&:first-child {
 			flex-basis: 100%;
-			font-size: 288px;
+			font-size: 96px;
 			margin: 0;
+			font-weight: 700;
 		}
-		font-weight: 500;
-		font-size: 36px;
 	}
 	a {
 		flex-basis: 100%;
 		margin-top: 10vh;
 		color: $color_1;
-		font-size: 18px;
+		font-size: 16px;
 		text-decoration: underline;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
 	}
 }
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 720px) {
 	.errorComponent {
 		p {
-			&:first-child {
-				font-size: 96px;
-				font-weight: 700;
-			}
-			font-size: 18px;
+			font-size: 36px;
 			margin-top: 10vh;
+			&:first-child {
+				font-size: 288px;
+			}
 		}
 		a {
-			font-size: 16px;
-			margin-top: 10vh;
-			margin-bottom: 10vh;
+			font-size: 18px;
 		}
 	}
 }

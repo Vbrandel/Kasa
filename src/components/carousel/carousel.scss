@@ -1,3 +1,6 @@
+$color_1: white;
+$font-family_1: 'Montserrat';
+
 .carousel {
 	margin-block: 30px;
 	overflow: hidden;
@@ -5,15 +8,15 @@
 	border-radius: 25px;
 	span {
 		position: absolute;
-		color: white;
+		color: $color_1;
 		bottom: 60px;
 		left: 50%;
-		font-family: 'Montserrat';
+		font-family: $font-family_1;
 	}
 }
 .carousel-container {
 	display: flex;
-	transition: transform .5s linear;
+	transition: transform 0.5s linear;
 	border-radius: 25px;
 }
 .carousel-img {
@@ -26,6 +29,10 @@
 	position: absolute;
 	top: 40%;
 	right: 3%;
+	transform: rotate(90deg);
+	width: 50px;
+	height: 85px;
+	cursor: pointer;
 }
 .arrow-left {
 	transform: rotate(270deg);
@@ -36,14 +43,7 @@
 	height: 85px;
 	cursor: pointer;
 }
-.arrow-right {
-		transform: rotate(90deg);
-		width: 50px;
-		height: 85px;
-		cursor: pointer;
-}
-
-@media only screen and (max-width : 870px) {
+@media only screen and (max-width: 870px) {
 	.carousel-img {
 		height: 300px;
 	}
@@ -60,11 +60,10 @@
 	}
 	.arrow-left {
 		width: 30px;
-		// height: 85px;
 		left: 5%;
 	}
 	.arrow-right {
 		width: 30px;
-		right:5%;
+		right: 5%;
 	}
 }

@@ -1,85 +1,82 @@
+$color_1: white;
+$color_2: #ff6060;
+$font-family_1: 'Montserrat';
+
 .bascule-elements {
-	button {
-	  background: #FF6060;
-	  border: none;
-	  padding: 5px;
-	  font-family: 'Montserrat';
-	  font-size: 24px;
-	  color: white;
-	  cursor: pointer;
-	}
-  
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	display: flex;
 	flex-direction: column;
 	max-width: 1000px;
 	width: 100%;
 	gap: 10%;
-  }
-  
-  .button-bar {
+	button {
+		background: #ff6060;
+		border: none;
+		padding: 5px;
+		font-family: $font-family_1;
+		color: $color_1;
+		cursor: pointer;
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
+}
+.button-bar {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	cursor: pointer;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 5px;
 	padding-inline: 15px;
-	background: #FF6060;
-  
+	background: #ff6060;
 	img {
-	  transition-duration: 0.5s;
-	  width: 30px;
+		transition-duration: 0.5s;
+		width: 5%;
+		padding-right: 10px;
 	}
-  }
-  
-  .arrow.rotate {
+}
+.arrow.rotate {
 	transform: rotate(180deg);
-  }
-  
-  
-  .bascule-content {
-	background: #F7F7F7;
+	margin-right: 10px;
+}
+.bascule-content {
+	background: #f7f7f7;
 	border-radius: 5px;
-	color: #FF6060;
-  
-	h4 {
-	  margin: 0;
-	  font-size: 20px;
-	  font-weight: 300;
-	  padding: 20px 0px;
-	}
-  
-	transition: all .3s linear;
+	color: $color_2;
+	transition: all 0.3s linear;
 	height: 0;
 	overflow: hidden;
 	box-sizing: border-box;
 	padding: 0 30px;
-  }
-  
-  @media only screen and (max-width: 720px) {
-	.bascule-elements button {
-	  font-size: 16px;
-	  margin-bottom: 0px;
+	h4 {
+		margin: 0;
+		font-size: 20px;
+		font-weight: 300;
+		padding: 20px 0px;
+		text-align: left;
+	}
+}
+@media only screen and (min-width: 720px) {
+	.bascule-elements {
+		button {
+			font-size: 24px;
+		}
+		margin-bottom: 30px;
 	}
 	.button-bar {
-	  border-radius: 5px;
-	  padding: 5px;
+		border-radius: 5px;
+		padding: 10px;
+		img {
+			width: 30px;
+		}
 	}
-	.button-bar img {
-		width: 5%;
-		padding-right: 10px;
-	}
-	.bascule-elements {
-	  margin-bottom: 25px;
-	}
-	.arrow.rotate{
+	.arrow.rotate {
 		margin-right: 10px;
 	}
-
-	.bascule-content h4{
-		font-size:16px;
-		text-align: left;
-		padding: 20px 0px;
+	.bascule-content {
+		h4 {
+			padding: 20px 0px;
+			font-size: 20px;
+		}
 	}
-  }
+}
