@@ -1,8 +1,3 @@
-/*
-
-<Link to={props.id} tag=div/> // Création du lien
-
- */
 import './thumbnail.scss'
 
 const Thumbnail = (props) => {

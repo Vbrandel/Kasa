@@ -80,7 +80,6 @@ function Appartments() {
                                 {equipement} <br />
                               </span>
                             )
-                          //   Une autre façon pour faire ça ?
                           })}
                         </>
                       }
